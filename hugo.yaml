@@ -1,0 +1,193 @@
+baseURL: "https://kjetilfjellheim.github.io"
+languageCode: "en-us"
+title: "Kjetil Fjellheim"
+theme: hugo-profile
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+enableRobotsTXT: true
+pagination:
+  pagerSize: 3
+params:
+  title: "My profile"
+  description: My profile site.
+  favicon: "/fav.png"
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  font:
+    fontSize: 0.9rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  navbar:
+    align: ms-auto 
+    brandName: "Kjetil Fjellheims Profile"
+    disableSearch: false
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Kjetil."
+    subtitle: "I am a code monkey."
+    content: "Backend developer programming primarily in Java at work, but uses other languages like Rust and Javascript in my spare time. Also uses time on small electronics projects all on hobbyist basis."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://kjetilfjellheim.github.com      
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/kjetil-fjellheim-b654245
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I have been a professional software developer since the 2000s, and have worked on a variety of projects in different industries. I am currently working as a software developer at TietoEvry within banking.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently."
+      items:
+        - "Languages: Java, Rust, Python, JavaScript"
+        - "Java frameworks: Spring, Cxf ++"
+        - "Rust frameworks: Actix, Tokio ++"
+        - "JavaScript frameworks: Vue, Angular ++"
+        - "Desktop frameworks: Tauri"
+        - "Databases: PostgreSQL, MariaDb, Oracle ++"
+        - "Tools: Docker, Kubernetes, Git ++"
+        - "Cloud: Openshift ++"
+        - "OS: Linux, Windows, AIX ++"
+        - "Other: Git, Jira, Confluence ++"
+        - "Preferred IDE: VSCode"
+  experience:
+    enable: true
+    index: false
+    items:
+      - job: "Developer"
+        company: "TietoEvry"
+        companyUrl: "https://www.tietoevry.com/no/"
+        date: "Apr 2019 - present"
+        content: "I am currently working as a software developer at [Tietoevry](https://www.tietoevry.com/no/) in Bergen. I am responsible for developing and maintaining software systems within the banking area."
+
+      - job: "Developer"
+        company: "Institute of marine research"
+        companyUrl: "https://www.imr.no/"
+        date: "Aug 2012 - Mar 2019"
+        content: "I worked as a software developer at [Institute of marine research](https://www.imr.no/) in Bergen. I was responsible for developing and maintaining software systems for data collection and storage."
+       
+      - job: "Developer"
+        company: "TietoEvry"
+        companyUrl: "https://www.tietoevry.com/no/"
+        date: "Feb 2011 - Jun 2012"
+        content: "I worked as a software developer at [Evry AS](https://www.tietoevry.com/no/) in Bergen. I was responsible for developing and maintaining software systems within the security area."
+
+      - job: "Developer"
+        company: "Statistics Norway"
+        companyUrl: "https://www.ssb.no"
+        date: "Nov 2000 - Jan 2011"
+        content: "I worked as a software developer at [Statistics Norway](https://www.ssb.no) in Oslo. I was responsible for developing and maintaining software systems for data retrieval and storage."
+
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "Narvik University College (HiN)"
+        school:
+          name: "Narvik University College (HiN)"
+          url: "https://uit.no/studiesteder/narvik"
+        date: "Jul 1996 - Jun 1999"
+        content: |-
+          I have a bachelor degree in computer science from Narvik University College (HiN). My main task was to develop a system used by robotics for mapping and sensor use.
+      - title: "Bodin High School"
+        school:
+          name: "Bodin High School"
+          url: "https://bodin.vgs.no/"
+        date: "Aug 1993 - Jun 1996"  
+        content: |-
+          I took GK electrical and VK1 electronics at Bodin High School. At the same time took general public courses as a private individual. This included mathematics, physics, chemistry + others required for to get into college.
+  projects:
+    enable: true
+    items:
+      - title: Apinae
+        image: /images/projects/apinae.png
+        content: An API testing software. Allows for mocking responses and routing requests to other APIS. The project is primarily written in Rust, except for the UI which is Javascript. 
+        badges:
+          - "Rust"
+          - "Javascript"
+        featured:
+          name: Docs
+          link: "https://kjetilfjellheim.github.io/apinae"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/kjetilfjellheim/apinae 
+      - title: Monitoring agent
+        image: /images/projects/monitor-agent.png
+        content: Monitoring agent for monitoring Linux servers. The project is primarily written in Rust, except for the UI which is Javascript. It was made bacause I needed a simple home monitoring solution and I would like to know the proc files better.
+        badges:
+          - "Rust"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/kjetilfjellheim/monitoring-agent   
+      - title: Taxonomy api
+        image: /images/projects/taxonomy.png
+        content: Taxonomy api for retrieving taxonomy data from a database. The project is written in Rust. I made this project to learn API develoment in Rust.
+        badges:
+          - "Rust"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/kjetilfjellheim/rust_taxonomy     
+      - title: Hexbot (Robotics)
+        image: /images/projects/hexpod.png
+        content: Hexbot is a robotics project I made started developing in 2016. Unfortunately the servos started breaking down and I lost interest in the project. The project is written using ST microelectronics STM32 microcontroller. The project is written in C.
+        badges:
+          - "C"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/kjetilfjellheim/arduino_hexbot
+          - icon: fab fa-github
+            url: https://github.com/kjetilfjellheim/Hexbot
+          - icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=sLiX0aHcrN0         
+
+        
+  contact:
+    enable: true
+    content: To contact me please use linkedin.
+  footer:
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com  
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
