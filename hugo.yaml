@@ -50,7 +50,7 @@ params:
     title: "Kjetil."
     subtitle: "I am a code monkey."
     content: "Backend developer programming primarily in Java at work, but uses other languages like Rust and Javascript in my spare time. Also uses time on small electronics projects all on hobbyist basis."
-    image: /images/hero.svg
+    image: /images/me.jpg
     bottomImage:
       enable: true
     socialLinks:
@@ -172,7 +172,24 @@ params:
             url: https://github.com/kjetilfjellheim/Hexbot
           - icon: fab fa-youtube
             url: https://www.youtube.com/watch?v=sLiX0aHcrN0         
-
+      - title: Fractals webassembly
+        image: /images/projects/fractals.png
+        content: The rust fractals project is a webassembly project that generates fractals. The project is written in Rust and uses the webassembly framework. It contains two projects one to generate sierpinski triangles and one to generate mandelbrot fractals.
+        badges:
+          - "Rust"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/kjetilfjellheim/rust_fractals
+      - title: Picobot (Robotics)
+        image: /images/projects/picobot.png
+        content: This is a series of simple projects I made while learning about robotics. The project is using Arduino and is written in C.
+        badges:
+          - "C"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/kjetilfjellheim/arduino_picobot
+          - icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=g3PQfudYTS4
         
   contact:
     enable: true
